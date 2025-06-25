@@ -1,0 +1,122 @@
+use kec
+switched to db kec
+db.createCollection("user")
+{ ok: 1 }
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7bddf5903c8cc35dac3b')
+}
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7bedf5903c8cc35dac3c')
+}
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7c06f5903c8cc35dac3d')
+}
+db.User.insertOne({})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7c4af5903c8cc35dac3e')
+}
+db.User.insertOne({
+name : "jagatheeshvar",})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7c81f5903c8cc35dac3f')
+}
+db.user.insertOne({
+name : "jagatheeshvar",
+email :"jagatheeshvars.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7ce8f5903c8cc35dac40')
+}
+db.user.insertOne({
+name : "rithish",
+email :"rithishm.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7d4df5903c8cc35dac41')
+}
+db.user.insertOne({
+name : "tharun",
+email :"tharunn.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7d6ef5903c8cc35dac42')
+}
+db.user.insertOne({
+name : "mithunrugnesh",
+email :"mithunrugneshr.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7da1f5903c8cc35dac43')
+}
+db.user.insertOne({
+name : "hariesragavendra",
+email :"hariesragavendra.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7dc2f5903c8cc35dac44')
+}
+db.user.insertOne({
+name : "sutharsan",
+email :"sutharsan.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7de3f5903c8cc35dac45')
+}
+db.user.insertOne({
+name : "jaiprasaanth",
+email :"jaiprasaanthl.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7dfef5903c8cc35dac46')
+}
+db.user.insertOne({
+name : "sanjay",
+email :"sanjayk.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7e22f5903c8cc35dac47')
+}
+db.user.insertOne({
+name : "sanjay",
+email :"sanjayr.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7e31f5903c8cc35dac48')
+}
+db.user.insertOne({
+name : "hariprasanna",
+email :"hariprasannas.23eie@kongu.edu",
+age :"19",
+dep :"EIE"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('685b7e53f5903c8cc35dac49')
+}
+kec
+
