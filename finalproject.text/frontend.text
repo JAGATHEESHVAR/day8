@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+</head>
+<body>
+  <h1>Current Weather at Your Location</h1>
+  <button onclick="getWeather()">Get Weather</button>
+  <div id="result"></div>
+
+  <script>
+    function getWeather() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(async (position) => {
+          const lat = position.coords.latitude;
+          const lon = position.coords.longitude;
+
+          try {
+            const response = await fetch('/weather?lat=${lat}&lon=${lon}');
+            const data = await response.json();
+
+            if (data.error) {
+              document.getElementById('result').innerText = 'Error: ' + data.error;
+            } else {
+              document.getElementById('result').innerHTML = `
+                <p><strong>Location:</strong> ${data.location}</p>
+                <p><strong>Temperature:</strong> ${data.temperature} °C</p>
+                <p><strong>Condition:</strong> ${data.description}</p>
+            }
+          } catch (error) {
+            document.getElementById('result').innerText = 'Failed to fetch weather data.';
+          }
+        }, (error) => {
+          document.getElementById('result').innerText = 'Geolocation error: ' + error.message;
+        });
+      } else {
+        document.getElementById('result').innerText = 'Geolocation not supported by this browser.';
+      }
+    }
+  </script>
+</body>
+</html>
